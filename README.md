@@ -88,9 +88,14 @@ This is an Android application built entirely using the command line, without An
 - Android SDK (Set `ANDROID_HOME` environment variable)
 - Gradle (Installed or use Gradle Wrapper)
 
-## Build and Run
-
 ### Clone the Repository
 ```sh
 git clone https://github.com/yourusername/myapp.git
 cd myapp
+```
+
+## Build and Run
+
+./gradlew build
+
+./gradlew assembleRelease --keystore my-release-key.jks --keyalias mykeyalias
